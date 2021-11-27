@@ -2,8 +2,8 @@
     --background-color: hsl(217, 54%, 11%);
     --background-shadow: #0c1729;
     --background-card: hsl(216, 50%, 16%);
-    --font-card-eth: #44e1e6;
-    --font-card-color: #8aaad9;
+    --font-color-card-eth: hsl(178, 100%, 50%);
+    --font-card-color: hsl(215, 51%, 70%);
 }
 
 * {
@@ -26,11 +26,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 400px;
+    width: 350px;
     padding: 1.5rem;
     background-color: var(--background-card);
     color: var(--font-card-color);
     border-radius: 0.6rem;
+    box-shadow: 0 30px 40px 30px var(--background-shadow);
 
 }
 
@@ -40,13 +41,61 @@ body {
 }
 
 .card-body .title-card {
-    margin: 1rem 0;
+    margin: 1.3rem 0 0 0;
     color: #fff;
     font-weight: 600;
     font-size: 1.4rem;
 }
 
 .card-body p {
-    margin: 1rem 0;
+    margin: 1.3rem 0;
     font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.hr {
+    margin: 0 auto;
+    color: hsl(215, 32%, 27%);
+    margin: 1.5rem 0 1rem 0;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ethereum {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ethereum span {
+    margin: 0 5px;
+}
+
+.eth {
+
+    color: var(--font-color-card-eth);
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 2rem;
+}
+
+footer>span {
+    margin-left: 1rem;
+}
+
+footer span:nth-child(1) {
+    color: #fff;
 }
